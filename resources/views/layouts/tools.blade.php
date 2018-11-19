@@ -183,7 +183,7 @@
     </div>
 
     <!-- Three column row -->
-    <div class="flex flex-wrap justify-center px-6 sm:px-2 mb-4 sm:mt-0">
+    <div class="flex flex-wrap justify-center px-6 sm:px-2 mb-1 sm:mt-0">
         <!-- Chemical Shifts -->
         <div class="w-full sm:flex-1 mx-2 text-center mb-3 sm:mb-0">
             <a href="https://chemicalshifts.com" class="no-underline" target="_blank">
@@ -210,7 +210,7 @@
 
 
         <!-- Mass adducts -->
-        <div class="w-full sm:flex-1 mx-2 text-center mb-3 sm:mb-0">
+        <div class="w-full sm:flex-1 mx-2 text-center sm:mb-0">
             <a href="https://kind-meninsky-647f95.netlify.com/" class="no-underline" target="_blank">
                 <div class="sm:h-16 h-12 text-center shadow-md rounded hover:bg-blue-dark cursor-pointer border border-blue-dark sm:border-grey-dark">
                     <p class="flex justify-center sm:py-4 py-2 text-lg text-grey-darkest hover:text-white align-center">
