@@ -1,7 +1,7 @@
 <template>
-<div>
-  <button @click="login" class="no-underline text-xs sm:text-base text-grey-darker tracking-wide font-thin hover:text-blue mr-4">Login</button>
-  <button @click="register" class="no-underline text-xs sm:text-base text-grey-darker tracking-wide font-thin hover:text-blue">Register</button>
+<div class="mr-4 -mt-2">
+  <button @click="login" class="px-4 mr-1 py-2 bg-blue-dark font-semibold border border-blue-dark hover:bg-white hover:text-blue-darker text-white rounded-lg">Login</button>
+  <button @click="register" class="px-4 py-2 bg-red-darker font-semibold border border-red-darker hover:bg-white hover:text-red-darker text-white rounded-lg">Register</button>
 </div>
 </template>
 

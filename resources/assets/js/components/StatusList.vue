@@ -1,18 +1,23 @@
 <template>
-<div>
+<div class="mb-4 -mt-3">
 
-  <div class="flex py-4 px-6 sm:px-0 sm:mt-8 mt-6 pt-4 justify-center items-center border-t border-grey-light shadow-md">
+  <div class="flex py-3 px-6 sm:px-0 justify-center items-center shadow-md border-t border-grey-light">
     <div v-for="machine in Object.keys(machines)">
-
         <div :class="indicatorClass(machine)" class="inline-flex w-2 h-2 rounded full mr-px shadow"></div>
         <div class="inline-flex sm:mr-4 mr-2 sm:text-sm text-xs">
             <div v-if="auth">
               <button @click="toggleModal(machine)" class="text-grey-dark hover:cursor-pointer hover:underline">
                 {{ lookup[machine] }}
+                <span class="sm:visible invisible" v-if="machines[machine]['status'] == 'running'">
+                ({{ machines[machine]['user'] }})
+              </span>
               </button>
             </div>
             <div v-else>
               {{ lookup[machine] }}
+              <span class="sm:visible invisible" v-if="machines[machine]['status'] == 'running'">
+                ({{ machines[machine]['user'] }})
+              </span>
             </div>
         </div>
 
@@ -20,8 +25,8 @@
   </div>
 
 <div class="invisible sm:visible flex justify-center sm:mt-2">
-      <div class="flex justify-center text-xs text-grey items-center">
-      <span class="text-grey text-base mr-px">(</span>
+      <div class="flex justify-center text-xs text-grey-darker items-center">
+      <span class="text-grey mr-px">(</span>
         <div class="mr-2"><div class="inline-flex w-4 h-2 rounded full mr-px bg-green"></div> Available</div>
         <div class="mr-2"><div class="inline-flex w-4 h-2 rounded full mr-px bg-blue-dark"></div> Running</div>
         <div class="mr-2"><div class="inline-flex w-4 h-2 rounded full mr-px bg-orange"></div> Maintenance</div>

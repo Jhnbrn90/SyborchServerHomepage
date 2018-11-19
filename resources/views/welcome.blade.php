@@ -15,9 +15,10 @@
         @include('layouts/nav')
         @include('layouts/login')
         @include('layouts/register')
-        @include('layouts/tools')
 
-        <status-list :data="{{ $machines }}" auth="{{ Auth::check() }}"></status-list>
+        <status-list :data="{{ $machines }}" auth="{{ Auth::check() }}"></status-list>  
+        
+        @include('layouts/tools')
 
         <message-list :data="{{ $messages }}" auth="{{ Auth::check() }}"></message-list>
     

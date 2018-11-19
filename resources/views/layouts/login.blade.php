@@ -3,6 +3,8 @@
         {{ csrf_field() }}
         <div class=" bg-white w-1/2 shadow-lg py-4 border border-blue-lightest rounded ">
             <h2 class="text-blue-dark mb-2 ">Log in</h2>
+            <span class="block text-grey-darker text-sm mb-2"><u>Note:</u> You need to be registered first, before you can login.</span>
+
             <div class="flex-inline ">
                 <input type="text" name="email" class="border border-blue-light mb-4 sm:mb-0 text-blue-dark text-center h-8
         bg-grey-lighter rounded" placeholder="E-mail address" autofocus required>
