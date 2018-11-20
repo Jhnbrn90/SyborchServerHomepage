@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="w-1/4 text-right mr-8 sm:text-normal text-xs font-medium ml-4 sm:ml-0">
+        <div class="w-1/4 text-right mr-8 sm:text-base text-xs font-medium ml-4 sm:ml-0">
             @auth
             <span class="text-grey-dark">Hi there, <span class="font-medium text-blue-dark">{{ ucfirst(auth()->user()->firstname) }}</span>!
             </span> <br><a class="no-underline text-grey hover:text-red-light" href="/logout">(log out)</a> @else
