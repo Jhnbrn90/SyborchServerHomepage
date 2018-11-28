@@ -205,13 +205,13 @@
             </a>
         </div>
 
-        <!-- ReaxR -->
+        <!-- FullText.me -->
         <div class="w-2/5 sm:flex-1 mx-2 text-center sm:mb-0">
-            <a href="http://reaxr.syborchserver.nl" class="no-underline" target="_blank">
+            <a href="https://fulltext.me" class="no-underline" target="_blank">
                 <div class="sm:h-16 h-12 text-center shadow-md rounded hover:text-white hover:bg-green-dark cursor-pointer border border-green-dark">
                     <p class="flex justify-center sm:py-4 py-2 text-lg text-green-darker align-center hover:text-white">
                     <svg class="sm:mr-2 invisible sm:visible sm:h-10 sm:w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><g><path d="M37.6,52.6c-0.4,0-0.9,0-1.6,0.1v8c0.5,0,0.9,0,1.4,0c1.4,0,2.3-0.5,3-1.4c0.5-0.7,0.7-1.7,0.7-2.9   C41.2,53.8,40,52.6,37.6,52.6z"/><path d="M26.9,52.6c-0.3,0-0.8,0-1,0V56c0.1,0,0.6,0.1,0.8,0.1c2.3,0,2.6-1,2.6-1.8C29.4,53.7,29.4,52.6,26.9,52.6z"/><path d="M59.7,49.3c0-2.3-1.8-4.1-4.1-4.1H21.1c-2.3,0-4.1,1.8-4.1,4.1v14.6c0,2.3,1.8,4.1,4.1,4.1h34.5c2.3,0,4.1-1.8,4.1-4.1   V49.3z M30.6,57.4c-1,0.8-2.4,1.2-4,1.2c-0.2,0-0.6,0-0.6,0v4.8h-2.8V50.4l0.5-0.1c1.2-0.2,2.3-0.3,3.2-0.3c1.6,0,2.9,0.4,3.8,1.1   c1,0.8,1.5,1.8,1.5,3C32.2,55.5,31.7,56.6,30.6,57.4z M42.6,61.1c-1.2,1.5-2.9,2.2-5.3,2.2c-0.7,0-1.8-0.1-3.3-0.3L33.5,63V50.4   l0.4-0.1c1.9-0.2,3.1-0.3,3.7-0.3c2.2,0,3.9,0.7,5,2c0.9,1.1,1.3,2.5,1.3,4.4C44,58.3,43.6,59.9,42.6,61.1z M53.5,52.7h-5.7v2.4   h5.3V58h-5.3v5.3H45V50.1h8.5V52.7z"/><path d="M56.3,10L56.3,10l-29.2,0c-2.3,0-4.1,1.9-4.1,4.1v29.1h3.3V16.1c0-1.5,1.2-2.8,2.7-2.8h27.2v19.3c0,2.2,1.9,4.1,4.1,4.1   h19.2V84c0,1.5-1.2,2.7-2.7,2.7H29.1c-1.5,0-2.7-1.2-2.7-2.7V70H23v15.9c0,2.3,1.9,4.1,4.1,4.1h51.8c2.3,0,4.1-1.8,4.1-4.1V36.7   L56.3,10z M61.3,33.5c-1,0-1.8-0.8-1.8-1.7v-14l15.8,15.7H61.3z"/></g></svg>
-                        <span class="sm:text-2xl text-xl font-medium sm:tracking-wide">ReaxR</span>
+                        <span class="sm:text-2xl text-xl font-medium sm:tracking-wide">FullText.me</span>
                     </p>
                 </div>
             </a>
