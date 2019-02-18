@@ -1,12 +1,12 @@
 <template>
 <div class="mb-4 -mt-3">
 
-  <div class="flex py-3 px-6 sm:px-0 justify-center items-center shadow-md border-t border-grey-light">
+  <div class="flex py-3 px-6 sm:px-0 font-normal justify-center items-center shadow-md border-t border-grey-light">
     <div v-for="machine in Object.keys(machines)">
         <div :class="indicatorClass(machine)" class="inline-flex w-2 h-2 rounded full mr-px shadow"></div>
         <div class="inline-flex sm:mr-4 mr-2 sm:text-sm text-xs">
             <div v-if="auth">
-              <button @click="toggleModal(machine)" class="text-grey-dark hover:cursor-pointer hover:underline">
+              <button @click="toggleModal(machine)" class="text-grey-darker hover:cursor-pointer hover:underline">
                 {{ lookup[machine] }}
                 <span class="sm:visible invisible" v-if="machines[machine]['status'] == 'running'">
                 ({{ machines[machine]['user'] }})
@@ -25,13 +25,11 @@
   </div>
 
 <div class="invisible sm:visible flex justify-center sm:mt-2">
-      <div class="flex justify-center text-xs text-grey-darker items-center">
-      <span class="text-grey mr-px">(</span>
+      <div class="flex justify-center text-xs text-grey-darkest font-normal items-center">
         <div class="mr-2"><div class="inline-flex w-4 h-2 rounded full mr-px bg-green"></div> Available</div>
         <div class="mr-2"><div class="inline-flex w-4 h-2 rounded full mr-px bg-blue-dark"></div> Running</div>
         <div class="mr-2"><div class="inline-flex w-4 h-2 rounded full mr-px bg-orange"></div> Maintenance</div>
         <div class="mr-px"><div class="inline-flex w-4 h-2 rounded full mr-px bg-red-dark"></div> Out of Order</div>
-     <span class="text-grey text-base">)</span>
       </div>
   </div>
 
@@ -40,9 +38,9 @@
     <div class="p-4 w-full h-auto shadow-md text-center border border-grey">
       <form @submit.prevent="onSubmit" action="/status">
         <h4 class="text-blue-dark underline font-medium sm:text-lg text-base mb-2">{{ machine }}</h4>
-        <span class="mb-2">Updated by <span class="font-medium">{{ machines[machine]['user'] }} ({{ machines[machine]['time'] }})</span></span>
+        <span class="mb-2 font-normal text-grey-dark">Updated by <span class="font-medium">{{ machines[machine]['user'] }} ({{ machines[machine]['time'] }})</span></span>
         <div class="flex-inline mb-4 mt-2">
-            <span class="mr-2">Current status:</span>
+            <span class="mr-2 font-normal text-grey-dark">Current status:</span>
             <select class="shadow" name="status" v-model="form.status">
                 <option value="" disabled>-- select --</option>
                 <option value="available" :selected="machines[machine]['status'] == 'available'">Available</option>

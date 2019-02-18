@@ -22,7 +22,7 @@
 
         <message-list :data="{{ $messages }}" auth="{{ Auth::check() }}"></message-list>
     
-        <div class="mt-4 -mb-6 flex justify-center text-xs">by John Braun</div>
+        <div class="mt-4 -mb-6 flex justify-center text-xs py-6">by John Braun</div>
     
     </div>
 

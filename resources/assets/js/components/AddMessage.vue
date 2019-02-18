@@ -1,9 +1,9 @@
 <template>
     <form @submit.prevent="onSubmit" method="POST" action="/messages" class="sm:w-1/2 w-4/5 text-center inline-flex mt-2">
-        <input v-model="message" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mr-2" placeholder="Send a message...">
+        <input v-model="message" type="text" class="h-10 shadow-md appearance-none text-center border border-grey rounded w-full py-2 px-3 text-grey-darkest mr-2" placeholder="Have something to say?">
         <button type="submit"
         :class="classes">
-            Send
+            Submit
         </button>
     </form>
 </template>

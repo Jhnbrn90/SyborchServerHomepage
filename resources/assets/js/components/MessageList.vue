@@ -5,8 +5,8 @@
   </div>
 
   <div class="flex justify-center py-4 mt-2" v-else>
-    <p class="text-grey">
-      <button @click="login" class="font-medium text-blue-light no-underline hover:text-grey-dark tracking-wide">Log in</button> to leave a message.
+    <p class="text-grey-dark">
+      <button @click="login" class="font-medium text-blue no-underline hover:text-grey-dark tracking-wide">Log in</button> to leave a message.
     </p>
   </div>
 
@@ -14,19 +14,19 @@
     <div class="w-full text-center">
       <div class="bg-white h-auto py-4 max-w-lg mx-auto px-8">
         <p class="font-thin mb-6">
-          <span class="text-xl tracking-wide font-medium leading-normal text-blue-dark">
+          <span class="text-xl tracking-wide font-semibold leading-normal text-blue-dark">
             {{ todaysDate }}
           </span>
           <br>
-          <span class="text-grey">Messages</span>
+          <span class="text-grey-darker">Messages</span>
           <span class="font-semibold text-blue-dark">({{ messageCount }})</span>
         </p>
 
-        <div class="message bg-white shadow-md border-t border-grey-lightest rounded py-4" v-for="message in messages">
+        <div class="message bg-white shadow-md border border-blue shadow rounded-lg py-4" v-for="message in messages">
           <div class="flex px-4 justify-center">
             <p class="font-normal text-lg mr-2 text-blue-dark">{{ message.user.firstname }}</p>
           </div>
-            <p class="font-thin text-xs text-grey-dark mb-2">({{ message.created_at | ago }})</p>
+            <p class="font-light text-xs text-grey-dark mb-2">({{ message.created_at | ago }})</p>
             <p class="text-black font-normal">{{ message.body }}</p>
         </div>
 
