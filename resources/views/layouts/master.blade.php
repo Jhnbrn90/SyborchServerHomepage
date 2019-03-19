@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,300" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=2') }}">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -52,7 +52,7 @@
 
     @yield('content')
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=2"></script>
 </body>
 
 </html>
