@@ -7,13 +7,13 @@
             <h2 class="text-blue-dark mb-6">Register</h2>
 
             <div class="flex-inline sm:mb-4">
-                <input type="text" name="firstname" class="form-input sm:mb-0" placeholder="First name" autofocus required>
-                <input type="text" name="lastname" class="form-input sm:mb-0" placeholder="Last name" required>
+                <input type="text" name="firstname" class="form-input sm:mb-0" placeholder="First name" value="{{ old('firstname') }}" autofocus required>
+                <input type="text" name="lastname" class="form-input sm:mb-0" placeholder="Last name" value="{{ old('lastname') }}" required>
             </div>
 
             <div class="flex-inline sm:mb-4">
-                <input type="email" name="email" class="form-input sm:mb-0" placeholder="E-mail address" required>
-                <input type="tel" name="phone" class="form-input sm:mb-0" placeholder="Phone number">
+                <input type="email" name="email" class="form-input sm:mb-0" placeholder="E-mail address" value="{{ old('email') }}" required>
+                <input type="tel" name="phone" class="form-input sm:mb-0" placeholder="Phone number" value="{{ old('phone') }}">
             </div>
 
             <div class="flex-inline sm:mb-4">
@@ -32,17 +32,17 @@
 
             <div class="flex-inline sm:mb-4">
                 Start Date
-                <input type="date" name="start" value="{{ $date }}" class="form-select-input sm:mb-0">
+                <input type="date" name="start" value="{{ $date ?? old('date') }}" class="form-select-input sm:mb-0">
             </div>
             <div class="flex-inline sm:mb-4">
                 End Date
-                <input type="date" name="end" class="form-select-input sm:mb-0" required>
+                <input type="date" name="end" class="form-select-input sm:mb-0" value="{{ old('end') }}" required>
             </div>
 
             <div class="flex-inline sm:mb-4">
                 <p class="text-xs text-grey-dark mt-2 mb-2">Think of a new, easy to remember password</p>
                 <input type="password" name="password" class="border border-blue-light mb-4 sm:mb-0 text-blue-dark text-center h-8
-                                    bg-grey-lighter rounded" placeholder="Account password" required>
+                                    bg-grey-lighter rounded" placeholder="Account password" value="{{ old('password') }}" required>
             </div>
 
             <div class="flex-inline sm:mb-4">
