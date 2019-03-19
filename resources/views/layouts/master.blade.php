@@ -42,6 +42,20 @@
         .hidden {
             display: none;
         }
+
+        #overlay {
+            position: fixed;
+            display:none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            cursor: pointer;
+        }
     </style>
 
     @yield('head')
@@ -50,7 +64,26 @@
 
 <body class="bg-white">
 
-    @yield('content')
+@if (Carbon\Carbon::today()->format('d-m') == '01-04' && ! session('seen_joke'))
+<div id="april-fools">
+    <div id="overlay" style="display:block;"></div>
+    
+    <div id="april-modal" class="w-full" style="position:absolute; top:50%; left: 50; z-index:999; overflow:hidden;">
+        <div class="container mx-auto">
+            <div class="text-center py-8 rounded shadow-lg border border-grey-darkest bg-white">
+                <h2 class="mb-4 text-grey-darkest">Introducing SyBOrCh Premium.</h2>
+                <p class="font-medium mb-6">Try Premium free for 30 days. Only € 9,99/month after.<sup>*</sup></p>
+                <a href="/trial" class="cursor-pointer bg-green hover:bg-green-dark text-white font-medium py-3 px-6 rounded-full no-underline tracking-wide">
+                  START FREE TRIAL
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
+
+    @yield('content')   
+
 
     <script src="js/app.js?v=2"></script>
 </body>
