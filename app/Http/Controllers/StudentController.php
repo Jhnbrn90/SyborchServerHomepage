@@ -37,7 +37,8 @@ class StudentController extends Controller
             'role'      => 'required',
             'password'  => 'required',
             'start'     => 'required',
-            'end'       => 'required'
+            'end'       => 'required',
+            'vunetid'   => 'required',
         ]);
 
         $start = Carbon::parse($validated['start']);
@@ -52,6 +53,7 @@ class StudentController extends Controller
 		$user->role = $validated['role'];
 		$user->start_date = $start;
 		$user->end_date = $end;
+        $user->vunetid = $validated['vunetid'];
 		$user->save();
 	} else {
 
@@ -65,7 +67,8 @@ class StudentController extends Controller
             'group'      => $validated['group'],
             'role'       => $validated['role'],
             'start_date' => $start,
-            'end_date'   => $end
+            'end_date'   => $end,
+            'vunetid'    => $validated['vunetid'],
 	    ]);
 	}
 

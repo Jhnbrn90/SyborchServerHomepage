@@ -40,6 +40,11 @@
             </div>
 
             <div class="flex-inline sm:mb-4">
+                VUnet ID
+                <input type="text" style="width: 7rem;" name="vunetid" class="form-select-input sm:mb-0" value="{{ old('vunetid') }}" placeholder="jbn478" required>
+            </div>
+
+            <div class="flex-inline sm:mb-4">
                 <p class="text-xs text-grey-dark mt-2 mb-2">Think of a new, easy to remember password</p>
                 <input type="password" name="password" class="border border-blue-light mb-4 sm:mb-0 text-blue-dark text-center h-8
                                     bg-grey-lighter rounded" placeholder="Account password" value="{{ old('password') }}" required>

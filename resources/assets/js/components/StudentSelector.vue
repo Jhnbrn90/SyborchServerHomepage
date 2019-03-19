@@ -67,6 +67,9 @@
                                     E-mail
                                 </th>
                                 <th class="table-heading">
+                                    VUnet ID
+                                </th>
+                                <th class="table-heading">
                                     Phone number
                                 </th>
                                 <th class="table-heading">
@@ -87,6 +90,9 @@
                                 </td>
                                 <td class="font-medium text-grey-darkest py-4 px-6 border-b border-grey-light text-center">
                                     {{ user.email }}
+                                </td>
+                                <td class="font-medium text-grey-darkest py-4 px-6 border-b border-grey-light text-center">
+                                    {{ user.vunetid }}
                                 </td>
                                 <td class="font-medium text-grey-darkest py-4 px-6 border-b border-grey-light text-center">
                                     {{ user.phone }}
