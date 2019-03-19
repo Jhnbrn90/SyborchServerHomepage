@@ -4,7 +4,7 @@
         <button @click="toggleFilters" class="underline hover:text-blue-dark text-grey-dark font-medium text-lg hover:cursor-pointer">{{ this.filters ? 'Hide' : 'Show' }} Filters</button>
     </div>
 
-    <div class="pt-4 mx-auto py-px sm:w-1/3 shadow-lg border-t border-grey-light bg-white rounded-lg mb-4" v-show="filters">
+    <div class="pt-4 mx-auto py-px sm:w-2/3 shadow-lg border-t border-grey-light bg-white rounded-lg mb-4" v-show="filters">
         <div class="flex justify-center mb-2">
         <button @click="select('syborch', 'group')" :class="isSelected('syborch', 'group') ? 'active' : 'inactive'" class="text-base select-button blue mr-2">
             SyBOrCh
@@ -12,8 +12,11 @@
         <button @click="select('grossmann', 'group')" :class="isSelected('grossmann', 'group') ? 'active' : 'inactive'" class="text-base select-button blue mr-2">
             Grossmann
         </button>
+        <button @click="select('medchem', 'group')" :class="isSelected('medchem', 'group') ? 'active' : 'inactive'" class="text-base select-button blue mr-2">
+            MedChem
+        </button>
         <button @click="select('all', 'group')" :class="isSelected('all', 'group') ? 'active' : 'inactive'" class="text-base select-button blue">
-            Both
+            All
         </button>
     </div>
 
@@ -22,7 +25,7 @@
             Students
         </button>
         <button @click="select('staff', 'members')" :class="isSelected('staff', 'members') ? 'active' : 'inactive'" class="text-base select-button indigo mr-2">
-            Staff
+            Employees
         </button>
         <button @click="select('all', 'members')" :class="isSelected('all', 'members') ? 'active' : 'inactive'" class="text-base select-button indigo">
             All members

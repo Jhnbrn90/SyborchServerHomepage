@@ -21,11 +21,12 @@
                 <select name="group" class="border border-blue-dark rounded p-2 sm:mb-0" required>
                     <option value="syborch">SyBOrCh</option>
                     <option value="grossmann">Grossmann</option>
+                    <option value="medchem">MedChem</option>
                 </select>
 
                 <select name="role" class="border border-blue-dark rounded p-2 sm:mb-0" required>
                     <option value="student">Student</option>
-                    <option value="staff">Staff</option>
+                    <option value="staff">Employee</option>
                 </select>
             </div>
 
