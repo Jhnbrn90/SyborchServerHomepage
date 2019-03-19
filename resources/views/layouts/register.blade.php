@@ -35,7 +35,7 @@
             </div>
             <div class="flex-inline sm:mb-4">
                 End Date
-                <input type="date" name="end" class="form-select-input sm:mb-0">
+                <input type="date" name="end" class="form-select-input sm:mb-0" required>
             </div>
 
             <div class="flex-inline sm:mb-4">
