@@ -145,9 +145,9 @@
         <!-- Order Forms -->
         <div class="w-2/5 sm:flex-1 mx-2 text-center sm:mb-0">
             <a href="https://orderforms.syborchserver.nl" class="no-underline" target="_blank">
-                <div class="sm:h-16 h-12 text-center shadow-md rounded hover:text-white hover:bg-purple-dark cursor-pointer border border-purple-dark">
-                    <p class="flex justify-center sm:py-4 py-2 text-lg text-purple-darker align-center hover:text-white">
-                        <svg class="sm:mr-2 invisible sm:visible sm:h-16 sm:w-16 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><path d="M17.916,65.584h3V34.417h-3V65.584z M82.083,34.417h-3v31.167h3V34.417z M73.225,61.418h3v-27h-3V61.418z M31.031,61.418h3  v-27h-3V61.418z M23.776,34.417v27h2.741h2.74v-27h-2.74H23.776z M36.889,34.417v27h2.741h2.741v-27H39.63H36.889z M44.143,61.418h3  v-27h-3V61.418z M60.113,34.417v27h2.741h2.741v-27h-2.741H60.113z M67.367,61.418h3v-27h-3V61.418z M54.256,61.418h3v-27h-3V61.418  z M50.001,61.418h3v-27h-3V61.418z M9.914,37.44h3v-8.004h8.002v-3H9.914V37.44z M79.083,26.436v3h8.003v8.004h3V26.436H79.083z   M87.086,70.564h-8.003v3h11.003V62.563h-3V70.564z M12.914,62.563h-3v11.002h11.002v-3h-8.002V62.563z"/></svg>
+                <div class="sm:h-16 h-12 text-center shadow-md rounded hover:bg-purple-dark cursor-pointer border border-purple-dark">
+                    <p class="flex justify-center sm:py-4 py-2 text-lg text-purple-darker hover:text-white align-center">
+                        <svg class="sm:mr-2 invisible sm:visible sm:h-10 sm:w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><path d="M17.916,65.584h3V34.417h-3V65.584z M82.083,34.417h-3v31.167h3V34.417z M73.225,61.418h3v-27h-3V61.418z M31.031,61.418h3  v-27h-3V61.418z M23.776,34.417v27h2.741h2.74v-27h-2.74H23.776z M36.889,34.417v27h2.741h2.741v-27H39.63H36.889z M44.143,61.418h3  v-27h-3V61.418z M60.113,34.417v27h2.741h2.741v-27h-2.741H60.113z M67.367,61.418h3v-27h-3V61.418z M54.256,61.418h3v-27h-3V61.418  z M50.001,61.418h3v-27h-3V61.418z M9.914,37.44h3v-8.004h8.002v-3H9.914V37.44z M79.083,26.436v3h8.003v8.004h3V26.436H79.083z   M87.086,70.564h-8.003v3h11.003V62.563h-3V70.564z M12.914,62.563h-3v11.002h11.002v-3h-8.002V62.563z"/></svg>
                         <span class="sm:text-2xl text-2xl font-medium sm:tracking-wide">Order Forms</span>
                     </p>
                 </div>
