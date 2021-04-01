@@ -68,16 +68,3 @@ Route::get('/logout', function () {
     Auth::logout();
     return redirect('/');
 });
-
-// April fools' route 
-Route::get('/trial/{reset?}', function($reset = null) {
-    if ($reset == 'reset') {
-        session()->forget('seen_joke');
-        return redirect('/');
-    }
-
-    session(['seen_joke' => true]);
-
-    return redirect()->back();
-});
-
